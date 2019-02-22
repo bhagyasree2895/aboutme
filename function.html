@@ -3,6 +3,7 @@
 <head>
 
     <link rel="stylesheet" href="./Styles/bhagi.css">
+    <script src="./Scripts/grades.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
 </head>
@@ -23,7 +24,7 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="function.html">Square area&Perimeter</a>
+                    <a class="nav-link" href="function.html">Grades Calculation</a>
                 </li>
             </ul>
             <form class="form-inline mt-2 mt-md-0">
@@ -40,33 +41,33 @@
         </div>
     </header>
 
-    <main>
+    <main class="container-fluid">
 
         <div class="container">
             <div style="text-align:center;padding-top: 4em">
-                <h3 style="border-style:dashed;background-color:lightblue">Square</h3>
+
+                <h1> Given 3 grades, calculate average grade</h1>
+                <h3>Right-click / Inspect, then select console</h3>
+
+                <p>Enter grade1 :
+                    <input id="firstNumber" type="text" value="3">
+                </p>
+
+                <p>Enter grade2:
+                    <input id="secondNumber" type="text" value="3">
+                </p>
+
+                <p>Enter grade3:
+                    <input id="thirdNumber" type="text" value="4">
+                </p>
+
+                <button id="clicker" class="btn btn-primary" onclick="myFunction()">Click me!</button>
+
+                <p id="result"></p>
             </div>
 
     </main>
-    <form name=form1>
-        <h3 style="color:red">For Finding the Area and Perimeter of a Square</h3>
-        <section>
-            Enter the side of square:
-            <input type="text" name="txtSide" size=10>
-            <br>
-            <br>
-            <br>
-            <input type="button" value="Calculate" onClick='CalculateArea();'>
-        </section>
-    </form>
 
-    <script language="JavaScript">
-        function CalculateArea() {
-            var radius = document.form1.txtSide.value;
-            document.write("<P>The area of the square is " + (radius * radius) + "</p>");
-            document.write("<P>The perimeter of the square is " + (4 * radius) + "</p>");
-        }
-    </script>
     <hr>
     <footer>
         &copy; 2019 Chanda Bhagya Sree
