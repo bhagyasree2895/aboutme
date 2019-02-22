@@ -28,5 +28,38 @@ function myFunction() {
     localStorage.setItem('countOfClicks', ct)
      console.log("This has been clicked:",ct)
 }
+function loadDoc() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("demo").innerHTML =
+        this.responseText;
+      }
+    };
+    xhttp.open("GET", "ajax_info.txt", true);
+    xhttp.send();
+  }
 
 console.log('SCRIPT END')
+function testingfunc(a,b,c){
+   grade1 = a;
+    grade2 = a;
+   grade3 = a;
+    var result;
+    var sum;
+    if(grade1<0 || grade2<0 || grade3<0){
+        result = 0;
+    }
+    else if(grade1>4 || grade2>4 || grade3>4){
+        result = 0;
+    }
+    else if(grade1== null || grade2== null || grade3== null){
+        return 0
+    }
+    else{
+       sum = grade1+grade2+grade3;
+       result = sum/3;
+    }
+    return result;
+
+}

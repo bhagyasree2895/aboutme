@@ -6,6 +6,17 @@
     <script src="./Scripts/grades.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
 </head>
 
 <body>
@@ -48,7 +59,10 @@
 
                 <h1> Given 3 grades, calculate average grade</h1>
                 <h3>Right-click / Inspect, then select console</h3>
+                <p>If you click on the "Hide" button, I will disappear.</p>
 
+<button id="hide">Hide</button>
+<button id="show">Show</button>
                 <p>Enter grade1 :
                     <input id="firstNumber" type="text" value="3">
                 </p>
@@ -64,13 +78,24 @@
                 <button id="clicker" class="btn btn-primary" onclick="myFunction()">Click me!</button>
 
                 <p id="result"></p>
+
+                <h3> Event Handler</h3>
+                <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+                <p id="demo"></p>
+                <br>
+                
+
+
+
             </div>
 
     </main>
 
     <hr>
+  
     <footer>
         &copy; 2019 Chanda Bhagya Sree
 
     </footer>
 </body>
+</html>
