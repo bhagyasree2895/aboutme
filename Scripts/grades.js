@@ -43,8 +43,8 @@ function loadDoc() {
 console.log('SCRIPT END')
 function testingfunc(a,b,c){
    grade1 = a;
-    grade2 = a;
-   grade3 = a;
+    grade2 = b;
+   grade3 = c;
     var result;
     var sum;
     if(grade1<0 || grade2<0 || grade3<0){
