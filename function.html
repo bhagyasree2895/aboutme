@@ -1,0 +1,75 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="./Styles/bhagi.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Bhagya Sree </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="function.html">Square area&Perimeter</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <header class="container-fluid">
+        <div class="row" style="background:grey;border-style:solid;padding-top: 1em;
+                        padding-bottom: 1em;">
+            <h1 style="background:pink;font:bolder;color:blue">Section 01 - Chanda Bhagya Sree</h1>
+            </article>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div style="text-align:center;padding-top: 4em">
+                <h3 style="border-style:dashed;background-color:lightblue">Square</h3>
+            </div>
+
+    </main>
+    <form name=form1>
+        <h3 style="color:red">For Finding the Area and Perimeter of a Square</h3>
+        <section>
+            Enter the side of square:
+            <input type="text" name="txtSide" size=10>
+            <br>
+            <br>
+            <br>
+            <input type="button" value="Calculate" onClick='CalculateArea();'>
+        </section>
+    </form>
+
+    <script language="JavaScript">
+        function CalculateArea() {
+            var radius = document.form1.txtSide.value;
+            document.write("<P>The area of the square is " + (radius * radius) + "</p>");
+            document.write("<P>The perimeter of the square is " + (4 * radius) + "</p>");
+        }
+    </script>
+    <hr>
+    <footer>
+        &copy; 2019 Chanda Bhagya Sree
+
+    </footer>
+</body>
